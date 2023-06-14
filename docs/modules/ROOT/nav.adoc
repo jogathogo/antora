@@ -1,1 +1,1 @@
-
+* xref:accounts.adoc[]
