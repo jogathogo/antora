@@ -1,1 +1,3 @@
-* xref:accounts.adoc[]
+* xref:why-fineract.adoc[]
+* xref:quick-install.adoc[]
+* supported-features.adoc[]
