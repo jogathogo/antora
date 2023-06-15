@@ -1,4 +1,4 @@
-
+= Supported Features
 
 == Prerequisite configurations
 Before using fineract, a number of configurations have to be completed. These include:
@@ -79,7 +79,6 @@ Loan product configuration has a lot of options that allow the platform to cater
 * Overdue penalty charge
 * Accounting integration with cash based, periodic accrual and upfront accrual support
 
-
 [attributes]
 ....
 PS: In the current version the following financing products are not supported out of the box:
@@ -105,7 +104,6 @@ Fixed deposit product configurations support standard term saving products i.e:
 * Accounting entries fully supported
 * Interest rate based on term and amount
 * Apply fees
-
 
 === Savings
 The savings module can be used for both current and savings products by setting interest rate as zero for current accounts.
@@ -247,3 +245,6 @@ These reports cover most of the reporting needs of a typical financial instituti
 For more complex reports, integration with Pentaho is necessary and fully supported. See contributor section for details on how to integrate pentaho.
 
 For advance reporting, analytics and dashboarding, integration with tools like spagoBi, tableau, etc is highly recommended.
+
+== Data import
+Fineract supports bulk data import using excel templates. The user downloads the templates, fills in the data and uploads the file. Once processed, the system will show the status of each record giving details of failed imports which can be reuploaded upon correction of the issue raised.
