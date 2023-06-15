@@ -5,7 +5,6 @@ Fineract is a headless core banking platform meaning it does not have a UI. It i
 the Mifos UI generally works with Fineract but may not fully support all apache fineract features.
 ....
 
-
 The platform supports most of the standard banking operations: client management, account management, loans, accounting, short/long term deposits and reporting.
 
 A number of configurative and administrative features are available out of the box, these include: roles and permissions, product definition, user management, maker/checker, two factor authentication and many more.
