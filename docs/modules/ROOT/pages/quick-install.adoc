@@ -1,3 +1,4 @@
+= Quick Install
 == Quick install and run Fineract
 Fineract is a Springboot application and can be deployed like any other such app. To get the platform up and running fast, follow these steps: 
 
