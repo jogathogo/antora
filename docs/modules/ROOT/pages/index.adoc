@@ -12,3 +12,5 @@ A number of configurative and administrative features are available out of the b
 As an open-source project, Fineract is constantly being updated with new features and improvements.
 
 :page-background-image: image:neom-Oj8w6hWC0dU-unsplash.jpg[]
+
+[background-image="neom-Oj8w6hWC0dU-unsplash.jpg" position=center]
