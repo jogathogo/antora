@@ -1,0 +1,15 @@
+site:
+  title: Fineract Docs
+  url: https://docs.demo.com
+  start_page: start::index.adoc
+content:
+  sources:
+  - url: https://github.com/jogathogo/antora.git
+  #- url: https://gitlab.com/antora/demo/demo-component-b.git
+  #  branches: [v2.0, v1.0]
+    start_path: docs
+ui:
+  bundle:
+    url: /Users/TRUMinistries/antora-ui/antora-ui-default/build/ui-bundle.zip
+    snapshot: true
+    
