@@ -1,5 +1,7 @@
 image:apache-fineract.jpeg[]
+
 == Overview
+
 Fineract is a headless core banking platform meaning it does not have a UI. It is fully API driven whereby all operations are carried out by making API calls and getting a response.
 [attributes]
 ....
