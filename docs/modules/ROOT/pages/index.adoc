@@ -10,3 +10,5 @@ The platform supports most of the standard banking operations: client management
 A number of configurative and administrative features are available out of the box, these include: roles and permissions, product definition, user management, maker/checker, two factor authentication and many more.
 
 As an open-source project, Fineract is constantly being updated with new features and improvements.
+
+image:neom-Oj8w6hWC0dU-unsplash.jpg[]
