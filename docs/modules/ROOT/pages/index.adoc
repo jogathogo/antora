@@ -1,3 +1,4 @@
+image:apache-fineract.jpeg[]
 == Overview
 Fineract is a headless core banking platform meaning it does not have a UI. It is fully API driven whereby all operations are carried out by making API calls and getting a response.
 [attributes]
@@ -10,9 +11,3 @@ The platform supports most of the standard banking operations: client management
 A number of configurative and administrative features are available out of the box, these include: roles and permissions, product definition, user management, maker/checker, two factor authentication and many more.
 
 As an open-source project, Fineract is constantly being updated with new features and improvements.
-
-----
-<div style="background-image: url('path/to/image.jpg'); background-repeat: no-repeat; background-size: cover;">
-----
-
-[background-image="neom-Oj8w6hWC0dU-unsplash.jpg" position=center]
