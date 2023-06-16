@@ -10,6 +10,6 @@ content:
     start_path: docs
 ui:
   bundle:
-    url: /Users/TRUMinistries/antora-ui/antora-ui-default/build/ui-bundle.zip
+    url: ui-bundle.zip
     snapshot: true
     
