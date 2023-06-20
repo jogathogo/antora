@@ -1,6 +1,6 @@
 site:
   title: Fineract Docs
-  url: https://jogathogo.github.io/antora
+  url: https://antora.github.io/gh-pages
   start_page: start::index.adoc
 content:
   sources:
