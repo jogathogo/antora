@@ -1,1 +1,1 @@
-* xref:project-setup.adoc[]
+* xref:project-setup.adoc[How to Setup Project for development]
