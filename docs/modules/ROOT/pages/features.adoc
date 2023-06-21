@@ -54,6 +54,7 @@ Loan product configuration has a lot of options that allow the platform to cater
 * Interest method: 
 ** Flat 
 ** Declining balance
+* Interest rate can be fixed or linked to floating rate chart
 * Repayment strategy(this determines distribution priority of amount repaid)
 - Penalties, Fees, Interest, Principal order
 - Overdue/Due Fee/Int,Principal
@@ -62,14 +63,13 @@ Loan product configuration has a lot of options that allow the platform to cater
 - Early Repayment Strategy
 - HeavensFamily Unique
 - Creocore Unique
-* Floating(variable) interest or fixed
 * Repayment periods
 - Weekly
 - Monthly
 - Daily
 * Moratorium on principal/interest or both
-* Interest free period
-* Arrears tolerance
+* Interest free period(customer will not be expected to pay interest)
+* Arrears tolerance(number of days a loan can be overdue without being penalized)
 * Days in a year can be set as [360,364,365 or actual]
 * Tracking non perfoming loans
 * Loan top up(refinance)
