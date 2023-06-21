@@ -1,1 +1,1 @@
-* xref:development-setup[]
+* xref:project-setup.adoc[]
