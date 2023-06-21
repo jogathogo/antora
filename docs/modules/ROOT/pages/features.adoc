@@ -85,13 +85,15 @@ Loan product configuration has a lot of options that allow the platform to cater
 
 [attributes]
 ....
-PS: In the current version the following financing products are not supported out of the box:
+PS: In the current version the following financing products 
+are not supported out of the box: 
 
 * Islamic finance
 * Buy now Pay later
 * Bullet loans
 
-That said, the framework to support these is available. Necessary modifications can be added with the help of a fineract service provider.
+That said, the framework to support these is available. Necessary
+modifications can be added with the help of a fineract service provider. 
 ....
 
 === Fixed deposits
