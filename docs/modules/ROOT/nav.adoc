@@ -1,4 +1,5 @@
+. Project Overview
 * xref:quick-install.adoc[]
 * xref:features.adoc[]
-* xref:contributors.adoc[]
+
 
