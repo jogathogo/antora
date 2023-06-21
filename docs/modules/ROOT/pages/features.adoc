@@ -43,9 +43,11 @@ Fields that require options such as client gender, address type and so on are cr
 This is especially useful when building a graphical user interface. Most of the drop down fields options will be defined and managed here.
 
 == Products configuration
-Products are templates used to define the expected behavior of a saving,deposit,loan accounts and fees. For example, the minimum and maximum loan term. 
+Fineract supports creation and management of the following products.
 
 image:supported_products.png[]
+
+Products provide a template for the user to configure the behavior of loan, savings, current, fixed deposit, recurring deposits and fees.
 
 === Loans
 Loan product configuration has a lot of options that allow the platform to cater for a wide range of use cases. These configurations can be combined to meet the most common scenarios and some unique ones.
