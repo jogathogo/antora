@@ -1,1 +1,1 @@
-Sample navigation
+* xref:development-setup[]
