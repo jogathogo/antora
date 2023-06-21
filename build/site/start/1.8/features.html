@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Supported Features :: Fineract Docs</title>
+    <link rel="canonical" href="https://antora.github.io/gh-pages/start/1.8/features.html">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://antora.github.io/gh-pages">Fineract Docs</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="start" data-version="1.8">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Fineract Docs</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Project Overview</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="features.html">Supported Features</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Contributor Zone</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="contributors/project-setup.html">How to Setup Project for development</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Fineract Docs</span>
+    <span class="version">Fineract 1.8</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Fineract Docs</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">Fineract 1.8</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Fineract Docs</a></li>
+    <li>Project Overview</li>
+    <li><a href="features.html">Supported Features</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/jogathogo/antora/edit/main/docs/modules/ROOT/pages/features.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Supported Features</h1>
+<div class="sect1">
+<h2 id="_prerequisite_configurations"><a class="anchor" href="#_prerequisite_configurations"></a>Prerequisite configurations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before using fineract, a number of configurations have to be completed. These include:</p>
+</div>
+<div class="sect2">
+<h3 id="_offices"><a class="anchor" href="#_offices"></a>Offices</h3>
+<div class="paragraph">
+<p>Use this feature to setup the organization office hierarchy that represents the physical office structure. By default, the head office will be available. The platform supports children of children hierarchy, for example: Head office/Regional office/Sub region office/Office/Field office</p>
+</div>
+<div class="paragraph">
+<p>Customers and users must be tagged to an office.</p>
+</div>
+<div class="paragraph">
+<p>User access can be limited to an office with the user having access to the office they have been tagged to and all offices below.</p>
+</div>
+<div class="paragraph">
+<p>For digital banks, the head office should suffice.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_currency"><a class="anchor" href="#_currency"></a>Currency</h3>
+<div class="paragraph">
+<p>Use this feature to add currenc(ies). All products and fees require a currency to be tagged as the operating currency. Please note, each product/charge only supports one currency.</p>
+</div>
+<div class="paragraph">
+<p>The platform does not support forex operations. Currency conversions have to be handled externally.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_employees"><a class="anchor" href="#_employees"></a>Employees</h3>
+<div class="paragraph">
+<p>Empployees are optionally tagged to customers, loans, savings and deposit accounts . They are also tagged(mandantory) in the teller module.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_payment_types"><a class="anchor" href="#_payment_types"></a>Payment types</h3>
+<div class="paragraph">
+<p>Payment types are used to track the channel through which a payment was made. It can be useful for reconciliation and auditing purposes.</p>
+</div>
+<div class="paragraph">
+<p>When used with accounting module, the payment type is linked to a GL account and determines the account debited or credited when the payment type is used in a transaction.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_roles_and_permissions"><a class="anchor" href="#_roles_and_permissions"></a>Roles and permissions</h3>
+<div class="paragraph">
+<p>Fineract supports fine grained permission setup with each activity requiring a permission to execute.</p>
+</div>
+<div class="paragraph">
+<p>Users are assigned role(s). Permissions are granted to roles.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_system_users"><a class="anchor" href="#_system_users"></a>System users</h3>
+<div class="paragraph">
+<p>This feature allows creation and management(change password,edit and delete) of system users.</p>
+</div>
+<div class="paragraph">
+<p>User passwords can be entered by the system admin manually or auto-generated by the system at account creation and sent to user email address.</p>
+</div>
+<div class="paragraph">
+<p>Note: Fineract supports integration with Identity and Access Management platforms like Keycloak where user account details are stored and managed.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_manage_codes"><a class="anchor" href="#_manage_codes"></a>Manage codes</h3>
+<div class="paragraph">
+<p>Fields that require options such as client gender, address type and so on are created and maintained using the manage codes feature.</p>
+</div>
+<div class="paragraph">
+<p>This is especially useful when building a graphical user interface. Most of the drop down fields options will be defined and managed here.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_products_configuration"><a class="anchor" href="#_products_configuration"></a>Products configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Fineract supports creation and management of the following products.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/supported_products.png" alt="supported products"></span></p>
+</div>
+<div class="paragraph">
+<p>Products provide a template for the user to configure the behavior of loan, savings, current, fixed deposit, recurring deposits and fees.</p>
+</div>
+<div class="sect2">
+<h3 id="_loans"><a class="anchor" href="#_loans"></a>Loans</h3>
+<div class="paragraph">
+<p>Loan product configuration has a lot of options that allow the platform to cater for a wide range of use cases. These configurations can be combined to meet the most common scenarios and some unique ones.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Amortization:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Equal installments</p>
+</li>
+<li>
+<p>Equal principal installment</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Interest method:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Flat</p>
+</li>
+<li>
+<p>Declining balance</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Interest rate can be fixed or linked to floating rate chart</p>
+</li>
+<li>
+<p>Repayment strategy(this determines distribution priority of amount repaid)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Penalties, Fees, Interest, Principal order</p>
+</li>
+<li>
+<p>Overdue/Due Fee/Int,Principal</p>
+</li>
+<li>
+<p>Principal, Interest, Penalties, Fees Order</p>
+</li>
+<li>
+<p>Interest, Principal, Penalties, Fees Order</p>
+</li>
+<li>
+<p>Early Repayment Strategy</p>
+</li>
+<li>
+<p>HeavensFamily Unique</p>
+</li>
+<li>
+<p>Creocore Unique</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Repayment periods</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Weekly</p>
+</li>
+<li>
+<p>Monthly</p>
+</li>
+<li>
+<p>Daily</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Moratorium on principal/interest or both</p>
+</li>
+<li>
+<p>Interest free period(customer will not be expected to pay interest)</p>
+</li>
+<li>
+<p>Arrears tolerance(number of days a loan can be overdue without being penalized)</p>
+</li>
+<li>
+<p>Days in a year can be set as [360,364,365 or actual]</p>
+</li>
+<li>
+<p>Tracking non perfoming loans</p>
+</li>
+<li>
+<p>Loan top up(refinance)</p>
+</li>
+<li>
+<p>Interest recalculation</p>
+</li>
+<li>
+<p>Loan guarantee using customer savings</p>
+</li>
+<li>
+<p>Multiple disbursement(tranche) loans</p>
+</li>
+<li>
+<p>Overdue penalty charge</p>
+</li>
+<li>
+<p>Accounting integration with cash based, periodic accrual and upfront accrual support</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>PS: In the current version the following financing products
+are not supported out of the box:
+
+* Islamic finance
+* Buy now Pay later
+* Bullet loans
+
+That said, the framework to support these is available. Necessary
+modifications can be added with the help of a fineract service provider.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_deposits"><a class="anchor" href="#_fixed_deposits"></a>Fixed deposits</h3>
+<div class="paragraph">
+<p>Fixed deposit product configurations support standard term saving products i.e:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Min - Max Deposit amount</p>
+</li>
+<li>
+<p>Min - Max Deposit term</p>
+</li>
+<li>
+<p>Interest compounding period can be: daily, monthly, quarterly, semi annual, annually</p>
+</li>
+<li>
+<p>Interest posting period can be: daily, monthly, quarterly, semi annual, annually</p>
+</li>
+<li>
+<p>Interest calculation can be based on: Daily balance or Daily average balance</p>
+</li>
+<li>
+<p>Days in year can be 360 or 365</p>
+</li>
+<li>
+<p>Pre-closure penalty</p>
+</li>
+<li>
+<p>Apply withholding tax on interest posted</p>
+</li>
+<li>
+<p>Accounting entries fully supported</p>
+</li>
+<li>
+<p>Interest rate based on term and amount</p>
+</li>
+<li>
+<p>Apply fees</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_savings"><a class="anchor" href="#_savings"></a>Savings</h3>
+<div class="paragraph">
+<p>The savings module can be used for both current and savings products by setting interest rate as zero for current accounts.</p>
+</div>
+<div class="paragraph">
+<p>The following standard account features are supported:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Interest rate(only fixed rate is supported, variable rate not supported)</p>
+</li>
+<li>
+<p>Interest compounding period can be: daily, monthly, quarterly, semi annual, annually</p>
+</li>
+<li>
+<p>Interest posting period can be: daily, monthly, quarterly, semi annual, annually</p>
+</li>
+<li>
+<p>Interest calculation can be based on: Daily balance or Daily average balance</p>
+</li>
+<li>
+<p>Days in year can be 360 or 365</p>
+</li>
+<li>
+<p>Min opening balance</p>
+</li>
+<li>
+<p>Lock in period</p>
+</li>
+<li>
+<p>Balance required for interest calculation</p>
+</li>
+<li>
+<p>Min balance</p>
+</li>
+<li>
+<p>Overdraft</p>
+</li>
+<li>
+<p>Dormancy tracking</p>
+</li>
+<li>
+<p>Apply withholding tax on interest posted</p>
+</li>
+<li>
+<p>Apply fees</p>
+</li>
+<li>
+<p>Apply Lien on account</p>
+</li>
+<li>
+<p>Accounting entries fully supported</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_recurring_deposits"><a class="anchor" href="#_recurring_deposits"></a>Recurring deposits</h3>
+<div class="paragraph">
+<p>This product supports use cases where a customer sets a target value they want to save over a period and frequecy. For example, the customer may set a weekly deposit of 1000 for 10 weeks. The system then generates the target principal amount and interest.</p>
+</div>
+<div class="paragraph">
+<p>The actual interest earned will depend on the actual deposits made.</p>
+</div>
+<div class="paragraph">
+<p>Supported configurations include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Min - Max Deposit amount</p>
+</li>
+<li>
+<p>Min - Max Deposit term</p>
+</li>
+<li>
+<p>Interest compounding period can be: daily, monthly, quarterly, semi annual, annually</p>
+</li>
+<li>
+<p>Interest posting period can be: daily, monthly, quarterly, semi annual, annually</p>
+</li>
+<li>
+<p>Interest calculation can be based on: Daily balance or Daily average balance</p>
+</li>
+<li>
+<p>Days in year can be 360 or 365</p>
+</li>
+<li>
+<p>Pre-closure penalty</p>
+</li>
+<li>
+<p>Apply withholding tax on interest posted</p>
+</li>
+<li>
+<p>Accounting entries fully supported</p>
+</li>
+<li>
+<p>Interest rate based on term and amount</p>
+</li>
+<li>
+<p>Apply fees</p>
+</li>
+<li>
+<p>Making deposits mandatory</p>
+</li>
+<li>
+<p>Balance required for interest calculation</p>
+</li>
+<li>
+<p>Deposit frequency: daily, weekly, monthly, years</p>
+</li>
+<li>
+<p>Allow withdrawals</p>
+</li>
+<li>
+<p>Lock-in period</p>
+</li>
+<li>
+<p>Apply advance payments towards future instalments</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fees_and_charges"><a class="anchor" href="#_fees_and_charges"></a>Fees and charges</h3>
+<div class="paragraph">
+<p>Fees can be applied to:
+* Deposit and loan accounts.
+* Clients accounts
+* Shares</p>
+</div>
+<div class="paragraph">
+<p>Supported configurations include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Charge time, ex. disbursement, withdrawal, installment fee, overdraft fee, etc</p>
+</li>
+<li>
+<p>Calculation method: Flat or %</p>
+</li>
+<li>
+<p>Payment method: Regular or transfer from other account(s)</p>
+</li>
+<li>
+<p>Activate or deactivate</p>
+</li>
+<li>
+<p>Charge time types</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Deposit Accounts</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Loan Accounts</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Shares</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Client</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disbursement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specified due date</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Withdrawal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Installment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purchase</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Annual</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Overdue fee</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redeem</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Monthly</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tranche disbursement</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Weekly</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specified due date</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Overdraft</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dormancy</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specified due date</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_accounting"><a class="anchor" href="#_accounting"></a>Accounting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Accounting is fully supported for customer related transactions i.e all transactions in savings, deposits, loan and fees result atleast one journals entry with the priciple of double entry being adhered to.</p>
+</div>
+<div class="paragraph">
+<p>GL mapping for each transaction type in loan, deposit, fees and savings account is done when configuring these products.</p>
+</div>
+<div class="paragraph">
+<p>The accounting module allows for:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Creation and management of the chart of accounts</p>
+</li>
+<li>
+<p>Search of journal entries</p>
+</li>
+<li>
+<p>Creation of manual journal entries</p>
+</li>
+<li>
+<p>Frequent posting by creating accounting rules</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_clients_management"><a class="anchor" href="#_clients_management"></a>Clients management</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The platform supports management of a client lifecycle from application, approval, activation all the way to closure. The following features are supported:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Client KYC details capture(application)</p>
+</li>
+<li>
+<p>Client activation</p>
+</li>
+<li>
+<p>Transfer</p>
+</li>
+<li>
+<p>Close</p>
+</li>
+<li>
+<p>Reactivation</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>KYC details capture can be extended using the Data Table feature where additional data is attached to the client profile without development effort. The data can be text, string, number, drop down, etc</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_accounts_management"><a class="anchor" href="#_accounts_management"></a>Accounts management</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Accounts are created under the client profile. A single customer profile can have multiple accounts. These can be current accounts, saving accounts, term deposit accounts or recurring deposit accounts.</p>
+</div>
+<div class="paragraph">
+<p>Each account will allow:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Deposit</p>
+</li>
+<li>
+<p>Withdrawal</p>
+</li>
+<li>
+<p>Apply fees/penalties</p>
+</li>
+<li>
+<p>Post interest</p>
+</li>
+<li>
+<p>Transfer funds</p>
+</li>
+<li>
+<p>Assign staff</p>
+</li>
+<li>
+<p>Hold funds</p>
+</li>
+<li>
+<p>Block/unblock debit/credit</p>
+</li>
+<li>
+<p>Collect withholding tax</p>
+</li>
+<li>
+<p>Close the account</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_loan_management"><a class="anchor" href="#_loan_management"></a>Loan management</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The platform supports all standard activities that happen throughout a typical life cycle of a loan account i.e:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Application</p>
+</li>
+<li>
+<p>Approval or rejection</p>
+</li>
+<li>
+<p>Disbursement</p>
+</li>
+<li>
+<p>Repayment</p>
+</li>
+<li>
+<p>Restructure</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Extend loan term</p>
+</li>
+<li>
+<p>Change interest rate mid term</p>
+</li>
+<li>
+<p>Mid term grace period</p>
+</li>
+<li>
+<p>Change repayment date</p>
+</li>
+<li>
+<p>Change EMI</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Waive interest</p>
+</li>
+<li>
+<p>Write off</p>
+</li>
+<li>
+<p>Recover written off loans</p>
+</li>
+<li>
+<p>Prepay</p>
+</li>
+<li>
+<p>Foreclose</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reporting"><a class="anchor" href="#_reporting"></a>Reporting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are over 80 reports available out of the box that provide detailed insights into finance, loans, savings/deposits and clients.</p>
+</div>
+<div class="paragraph">
+<p>These reports cover most of the reporting needs of a typical financial institution. The platform supports addition of new reports in the form of table reports that can be exported to csv format.</p>
+</div>
+<div class="paragraph">
+<p>For more complex reports, integration with Pentaho is necessary and fully supported. See contributor section for details on how to integrate pentaho.</p>
+</div>
+<div class="paragraph">
+<p>For advance reporting, analytics and dashboarding, integration with tools like spagoBi, tableau, etc is highly recommended.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_import"><a class="anchor" href="#_data_import"></a>Data import</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Fineract supports bulk data import using excel templates. The user downloads the templates, fills in the data and uploads the file. Once processed, the system will show the status of each record giving details of failed imports which can be reuploaded upon correction of the issue raised.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

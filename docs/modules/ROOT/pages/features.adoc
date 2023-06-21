@@ -6,6 +6,8 @@ Before using fineract, a number of configurations have to be completed. These in
 === Offices
 Use this feature to setup the organization office hierarchy that represents the physical office structure. By default, the head office will be available. The platform supports children of children hierarchy, for example: Head office/Regional office/Sub region office/Office/Field office
 
+image:docs/modules/ROOT/images/office_structure.png[]
+
 Customers and users must be tagged to an office. 
 
 User access can be limited to an office with the user having access to the office they have been tagged to and all offices below.
